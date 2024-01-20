@@ -28,8 +28,10 @@ class Program
 
                     Console.WriteLine("Write your entry:");
                     string entryText = Console.ReadLine();
+                    Console.WriteLine("Write your entry:");
+                    string location = Console.ReadLine();
 
-                    Entry newEntry = new Entry(date, prompt, entryText);
+                    Entry newEntry = new Entry(date, prompt, entryText, location);
                     journal.AddEntry(newEntry);
                     break;
 

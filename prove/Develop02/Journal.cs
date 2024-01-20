@@ -48,7 +48,8 @@ class Journal
                 string date = parts[0];
                 string prompt = parts[1];
                 string entryText = parts[2];
-                Entry entry = new Entry(date, prompt, entryText);
+                string location = parts[3];
+                Entry entry = new Entry(date, prompt, entryText, location);
                 _entries.Add(entry);
             }
         }
